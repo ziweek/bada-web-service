@@ -7,10 +7,11 @@ export default function Hero() {
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 md:py-24 items-center justify-center flex-col">
             <AnimationWave />
+            <br />
+            <br />
             <div className="text-center lg:w-2/3 w-full">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                이름자 슬퍼하는 멀리 사랑과 봅니다. 않은 오는 너무나 나의 아침이
-                이네들은 있습니다.
+                이름자 슬퍼하는 멀리 사랑과 봅니다.
               </h1>
               <p className="mb-8 leading-relaxed">
                 경, 하나에 이런 덮어 당신은 추억과 강아지, 계십니다. 보고,
