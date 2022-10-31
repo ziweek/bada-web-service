@@ -12,20 +12,26 @@ export default function Header() {
               href="/"
               className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
             >
-              {/* <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"> */}
               <Image
                 src={logoTextPic}
                 alt="bada logo"
                 width={150}
                 height={50}
               />
-              {/* </a> */}
             </Link>
             <nav className="invisible md:visible md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <a className="mr-5 hover:text-white">Home</a>
-              <a className="mr-5 hover:text-white">Project</a>
-              <a className="mr-5 hover:text-white">Member</a>
-              <a className="mr-5 hover:text-white">Contact</a>
+              <Link href="/" className="mr-5 hover:text-white">
+                Home
+              </Link>
+              <Link href="/project" className="mr-5 hover:text-white">
+                Project
+              </Link>
+              <Link href="/member" className="mr-5 hover:text-white">
+                Member
+              </Link>
+              <Link href="/" className="mr-5 hover:text-white">
+                Contact
+              </Link>
             </nav>
             <button className="invisible md:visible inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0">
               Sign In
