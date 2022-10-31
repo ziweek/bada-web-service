@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logoTextPic from "../public/logo_horizontal_blue.png";
-import logoPic from "../public/logo_192.png";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -8,17 +8,19 @@ export default function Header() {
       <div>
         <header className="text-gray-600 body-font">
           <div className="container mx-auto flex flex-wrap p-5 flex-row items-start md:items-center">
-            <a
+            <Link
               href="/"
               className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
             >
+              {/* <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"> */}
               <Image
                 src={logoTextPic}
                 alt="bada logo"
                 width={150}
                 height={50}
               />
-            </a>
+              {/* </a> */}
+            </Link>
             <nav className="invisible md:visible md:ml-auto flex flex-wrap items-center text-base justify-center">
               <a className="mr-5 hover:text-gray-900">Home</a>
               <a className="mr-5 hover:text-gray-900">Project</a>
