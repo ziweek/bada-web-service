@@ -19,7 +19,7 @@ export default function Header() {
                 height={50}
               />
             </Link>
-            <nav className="invisible md:visible md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <nav className="hidden md:block md:ml-auto flex flex-wrap items-center text-base justify-center">
               <Link href="/" className="mr-5 dark:hover:text-white">
                 Home
               </Link>
@@ -33,7 +33,7 @@ export default function Header() {
                 Contact
               </Link>
             </nav>
-            <button className="invisible md:visible inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0">
+            <button className="hidden md:block inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0">
               Sign In
             </button>
           </div>
