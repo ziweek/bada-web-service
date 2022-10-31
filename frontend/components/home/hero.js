@@ -5,8 +5,8 @@ export default function Hero() {
     <>
       <div>
         <section className="text-gray-600 body-font">
+          <AnimationWave />
           <div className="container mx-auto flex px-5 md:py-24 items-center justify-center flex-col">
-            <AnimationWave />
             <br />
             <br />
             <div className="text-center lg:w-2/3 w-full">
