@@ -17,7 +17,7 @@ export default function Home() {
 
       <Layout className="bg-primary">
         <Hero />
-        <Detail />
+        {/* <Detail /> */}
         {/* <Step /> */}
         <Content />
       </Layout>

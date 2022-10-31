@@ -5,13 +5,21 @@ export default function Hero() {
     <>
       <div>
         <section className="bg-primary text-gray-600 body-font">
-          <div>
-            <AnimationWave />
-          </div>
           <div className="container mx-auto flex px-5 md:py-12 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
+              <div className="block md:hidden">
+                <br />
+                <br />
+                <br />
+              </div>
+              <AnimationWave />
+              <div className="block md:hidden">
+                <br />
+                <br />
+                <br />
+              </div>
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-                이름자 슬퍼하는 멀리 사랑과 봅니다.
+                슬퍼하는 멀리 사랑과 봅니다.
               </h1>
               <p className="mb-8 leading-relaxed">
                 경, 하나에 이런 덮어 당신은 추억과 강아지, 계십니다. 보고,
@@ -22,7 +30,7 @@ export default function Hero() {
               </p>
               <div className="flex justify-center">
                 <button className="text-gray-400 inline-flex  border-0 py-2 px-6 focus:outline-none dark:hover:text-white hover:text-black rounded text-lg items-center justify-center">
-                  학회원 지원하기
+                  학회 지원하기
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
