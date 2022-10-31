@@ -20,16 +20,16 @@ export default function Header() {
               />
             </Link>
             <nav className="invisible md:visible md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <Link href="/" className="mr-5 hover:text-white">
+              <Link href="/" className="mr-5 dark:hover:text-white">
                 Home
               </Link>
-              <Link href="/project" className="mr-5 hover:text-white">
+              <Link href="/project" className="mr-5 dark:hover:text-white">
                 Project
               </Link>
-              <Link href="/member" className="mr-5 hover:text-white">
+              <Link href="/member" className="mr-5 dark:hover:text-white">
                 Member
               </Link>
-              <Link href="/" className="mr-5 hover:text-white">
+              <Link href="/" className="mr-5 dark:hover:text-white">
                 Contact
               </Link>
             </nav>
