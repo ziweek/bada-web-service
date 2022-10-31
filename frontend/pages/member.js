@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import Content from "../components/home/content";
-import Hero from "../components/home/hero";
 import Layout from "../components/layout";
+import Team from "../components/member/team";
 
 export default function Home() {
   return (
@@ -14,8 +12,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <Hero />
-        <Content />
+        <Team />
       </Layout>
     </div>
   );
