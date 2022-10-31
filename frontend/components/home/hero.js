@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       <div>
-        <section className="text-gray-600 body-font">
+        <section className="bg-primary text-gray-600 body-font">
           <div className="container mx-auto flex px-5 md:py-24 items-center justify-center flex-col">
             <div className="mx-auto md:w-2/3">
               <AnimationWave />
@@ -12,7 +12,7 @@ export default function Hero() {
             <br />
             <br />
             <div className="text-center lg:w-2/3 w-full">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
                 이름자 슬퍼하는 멀리 사랑과 봅니다.
               </h1>
               <p className="mb-8 leading-relaxed">
@@ -26,8 +26,20 @@ export default function Hero() {
                 멀리 까닭입니다. 이름자를 새워 나는 라이너 별 이름과 봅니다.
               </p>
               <div className="flex justify-center">
-                <button className="inline-flex  border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                  Button
+                <button className="text-gray-400 inline-flex  border-0 py-2 px-6 focus:outline-none hover:text-white rounded text-lg items-center justify-center">
+                  프로젝트 보러가기
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
                 </button>
               </div>
             </div>

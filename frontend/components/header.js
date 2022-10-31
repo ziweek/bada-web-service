@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <div>
-        <header className="text-gray-600 body-font">
+        <header className="bg-primary text-gray-600 body-font">
           <div className="container mx-auto flex flex-wrap p-5 flex-row items-start md:items-center">
             <Link
               href="/"
@@ -22,12 +22,12 @@ export default function Header() {
               {/* </a> */}
             </Link>
             <nav className="invisible md:visible md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <a className="mr-5 hover:text-gray-900">Home</a>
-              <a className="mr-5 hover:text-gray-900">Project</a>
-              <a className="mr-5 hover:text-gray-900">Member</a>
-              <a className="mr-5 hover:text-gray-900">Contact</a>
+              <a className="mr-5 hover:text-white">Home</a>
+              <a className="mr-5 hover:text-white">Project</a>
+              <a className="mr-5 hover:text-white">Member</a>
+              <a className="mr-5 hover:text-white">Contact</a>
             </nav>
-            <button className="invisible md:visible inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+            <button className="invisible md:visible inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0">
               Sign In
             </button>
           </div>
