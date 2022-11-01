@@ -19,14 +19,15 @@ export default function Hero() {
                 <br />
               </div>
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-                슬퍼하는 멀리 사랑과 봅니다.
+                Beyond Analytics, Develop Answer
               </h1>
               <p className="mb-8 leading-relaxed">
-                경, 하나에 이런 덮어 당신은 추억과 강아지, 계십니다. 보고,
-                흙으로 하나에 밤이 추억과 까닭입니다. 마리아 가을로 오면 별 시와
-                별 있습니다. 같이 아침이 묻힌 시인의 소녀들의 마리아 소학교 가을
-                거외다. 풀이 까닭이요, 내 있습니다. 같이 아침이 묻힌 시인의
-                소녀들의 마리아 소학교 가을 거외다. 풀이 까닭이요, 내 있습니다.
+                고려대학교 경영학회 bada는 Business Analytics를 연구하는
+                학회입니다.
+                <br className="hidden md:block" />본 학회에서는 경영학, 통계학,
+                데이터과학에 관련된 핵심적인 지식을 공유하고,
+                <br className="hidden md:block" /> 이를 기반으로 하여 다양한
+                프로젝트를 수행하고 있습니다.
               </p>
               <div className="flex justify-center">
                 <button className="text-gray-400 inline-flex  border-0 py-2 px-6 focus:outline-none dark:hover:text-white hover:text-black rounded text-lg items-center justify-center">
