@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Submit from "../components/apply/submit";
+import Content from "../components/home/content";
+import Hero from "../components/home/hero";
 import Layout from "../components/layout";
-import Step from "../components/apply/step";
 
 export default function Home() {
   return (
@@ -13,8 +13,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <Step className="flex" />
-        <Submit className="flex" />
+        <Hero className="flex" />
       </Layout>
     </div>
   );
