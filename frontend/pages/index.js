@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout className="bg-primary">
+      <Layout>
         <Hero className="flex" />
         <Content className="flex" />
       </Layout>

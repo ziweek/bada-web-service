@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       <div>
-        <section className="bg-primary text-gray-600 body-font">
+        <section className=" bg-primary text-gray-600 body-font">
           <div className="container mx-auto flex px-5 md:py-12 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
               <div className="block md:hidden">
