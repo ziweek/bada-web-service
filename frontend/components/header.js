@@ -29,7 +29,7 @@ export default function Header() {
               <Link href="/member" className="mr-5 dark:hover:text-white">
                 Member
               </Link>
-              <Link href="/" className="mr-5 dark:hover:text-white">
+              <Link href="/contact" className="mr-5 dark:hover:text-white">
                 Contact
               </Link>
             </nav>

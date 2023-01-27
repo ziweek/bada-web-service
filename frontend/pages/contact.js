@@ -1,6 +1,6 @@
 import Head from "next/head";
+import Detail from "../components/home/detail";
 import Layout from "../components/layout";
-import MemberMain from "../components/member/main";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <MemberMain></MemberMain>
+        <Detail></Detail>
       </Layout>
     </div>
   );

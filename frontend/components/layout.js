@@ -4,9 +4,13 @@ import Header from "./header";
 export default function Layout({ children }) {
   return (
     <>
-      <Header />
+      <div className="top-0 w-full">
+        <Header className="flex" />
+      </div>
       <div>{children}</div>
-      <Footer />
+      <div className="w-full bottom-0">
+        <Footer className="flex" />
+      </div>
     </>
   );
 }
