@@ -11,8 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
-        <MemberMain></MemberMain>
+      <Layout className="bg-primary">
+        <MemberMain className="flex"></MemberMain>
       </Layout>
     </div>
   );

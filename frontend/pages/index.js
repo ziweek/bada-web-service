@@ -16,10 +16,8 @@ export default function Home() {
       </Head>
 
       <Layout className="bg-primary">
-        <Hero />
-        {/* <Detail /> */}
-        {/* <Step /> */}
-        <Content />
+        <Hero className="flex" />
+        <Content className="flex" />
       </Layout>
     </div>
   );
