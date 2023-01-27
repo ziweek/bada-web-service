@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Detail from "../components/apply/detail";
+import Submit from "../components/apply/submit";
 import Layout from "../components/layout";
 import Step from "../components/apply/step";
 
@@ -14,7 +14,7 @@ export default function Home() {
 
       <Layout>
         <Step className="flex" />
-        <Detail className="flex" />
+        <Submit className="flex" />
       </Layout>
     </div>
   );

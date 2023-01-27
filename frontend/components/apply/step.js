@@ -2,33 +2,47 @@ import Image from "next/image";
 import logoPic from "../../public/logo_192.png";
 
 export default function Step() {
+  // poster_image, checklist_image
   return (
     <>
       <div>
         <section className="text-gray-600 body-font">
-          <div className="container px-5 py-24 mx-auto flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
-              <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">
-                학회원 선발절차
-              </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
-              </p>
+          <div className="container px-5 py-24 mx-auto">
+            <div className="flex flex-col">
+              <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-5xl mb-2 sm:mb-0">
+                  CLUB RECUITING
+                </h1>
+                <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+                  Street art subway tile salvia four dollar toast bitters
+                  selfies quinoa yuccie synth meditation iPhone intelligentsia
+                  prism tofu. Viral gochujang bitters dreamcatcher.
+                </p>
+              </div>
+            </div>
+            <div className="mb-16">
+              <div className="flex w-full items-center justify-between px-8 pb-2">
+                <p className="text-blue-400 font-bold">11st</p>
+                <p className="text-gray-300 font-bold">Founder</p>
+              </div>
+              <div className="h-2 bg-gray-200 rounded overflow-hidden">
+                <div className="w-24 h-full bg-blue-400"></div>
+              </div>
             </div>
             <div className="flex flex-wrap w-full justify-center">
-              {/* <Image
-                className="md:pr-10 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+              <Image
+                className="md:pr-10 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 pb-8 md:pb-0"
                 src={logoPic}
                 alt="step"
                 width={1200}
                 height={500}
-              /> */}
+              />
               <div className="md:w-1/2 md:py-6 items-center justify-center">
                 <div className="flex relative pb-12">
                   <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                     <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                   </div>
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-400 inline-flex items-center justify-center text-white relative z-10">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -55,7 +69,7 @@ export default function Step() {
                   <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                     <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                   </div>
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-400 inline-flex items-center justify-center text-white relative z-10">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -82,7 +96,7 @@ export default function Step() {
                   <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                     <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                   </div>
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-400 inline-flex items-center justify-center text-white relative z-10">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -110,7 +124,7 @@ export default function Step() {
                   <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                     <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                   </div>
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-400 inline-flex items-center justify-center text-white relative z-10">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -135,7 +149,7 @@ export default function Step() {
                   </div>
                 </div>
                 <div className="flex relative">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-400 inline-flex items-center justify-center text-white relative z-10">
                     <svg
                       fill="none"
                       stroke="currentColor"

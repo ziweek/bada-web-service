@@ -14,7 +14,6 @@ export default function Home() {
 
       <Layout>
         <Content />
-        <Content />
       </Layout>
     </div>
   );

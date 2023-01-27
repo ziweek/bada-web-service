@@ -9,21 +9,21 @@ export default function Header() {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link
             href="/"
-            classNameName="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+            className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
           >
             <Image src={logoTextPic} alt="bada logo" width={150} height={50} />
           </Link>
-          <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center py-4 lg:py-0">
-            <Link href="/" className="mr-5 hover:text-gray-900">
+          <nav className="md:ml-auto flex flex-wrap items-center text-base justify-between">
+            <Link href="/" className="mx-4 hover:text-gray-900">
               Home
             </Link>
-            <Link href="/project" className="mr-5 hover:text-gray-900">
+            <Link href="/project" className="mx-4 hover:text-gray-900">
               Project
             </Link>
-            <Link href="/member" className="mr-5 hover:text-gray-900">
+            <Link href="/member" className="mx-4 hover:text-gray-900">
               Member
             </Link>
-            <Link href="/apply" className="mr-5 hover:text-gray-900">
+            <Link href="/apply" className="mx-4 hover:text-gray-900">
               Apply
             </Link>
           </nav>
