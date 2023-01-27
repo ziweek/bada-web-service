@@ -31,7 +31,7 @@ export default function Content() {
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             {res.map((e, i) => (
-              <div className="p-4 md:w-1/3 sm:mb-0 mb-6 pb-8">
+              <div key={i} className="p-4 md:w-1/3 sm:mb-0 mb-6 pb-8">
                 <div className="rounded-lg h-64 overflow-hidden">
                   <Image
                     width={1200}

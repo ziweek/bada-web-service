@@ -32,7 +32,7 @@ export default function MemberMain() {
           <div className="flex flex-wrap -m-4">
             {/*  */}
             {res.map((e, i) => (
-              <div className="p-4 lg:w-1/4 md:w-1/2 pb-8">
+              <div key={i} className="p-4 lg:w-1/4 md:w-1/2 pb-8">
                 <div className="h-full flex flex-col items-center text-center">
                   <Image
                     priority={true}
