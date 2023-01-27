@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Detail from "../components/home/detail";
+import Detail from "../components/apply/detail";
 import Layout from "../components/layout";
-import Step from "../components/home/step";
+import Step from "../components/apply/step";
 
 export default function Home() {
   return (

@@ -15,14 +15,14 @@ export default function Step() {
                 Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
               </p>
             </div>
-            <div className="flex flex-wrap w-full">
-              <Image
+            <div className="flex flex-wrap w-full justify-center">
+              {/* <Image
                 className="md:pr-10 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
                 src={logoPic}
                 alt="step"
                 width={1200}
                 height={500}
-              />
+              /> */}
               <div className="md:w-1/2 md:py-6 items-center justify-center">
                 <div className="flex relative pb-12">
                   <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
