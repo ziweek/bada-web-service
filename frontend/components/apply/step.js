@@ -20,12 +20,32 @@ export default function Step() {
                 </p>
               </div>
             </div>
-            <div className="mb-16">
-              <div className="flex w-full items-center justify-between px-8 pb-2">
-                <p className="text-blue-400 font-bold">11st</p>
+            <div className="mb-32">
+              {/* <div className="flex w-24 pb-2 items-center justify-between"> */}
+              <div className="flex w-full items-center justify-between pb-2">
                 <p className="text-gray-300 font-bold">Founder</p>
+                <div className="flex flex-row w-24 items-center justify-between">
+                  <div></div>
+                  <div></div>
+                  <p className="text-blue-400 font-bold">11st</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    className="h-5 w-5"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="0"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10l5 5 5-5z" />
+                  </svg>
+                </div>
               </div>
-              <div className="h-2 bg-gray-200 rounded overflow-hidden">
+              <div className="flex justify-end h-2 bg-gray-200 rounded overflow-hidden">
                 <div className="w-24 h-full bg-blue-400"></div>
               </div>
             </div>

@@ -17,8 +17,8 @@ export default function Header() {
             <Link href="/" className="mx-4 hover:text-gray-900">
               Home
             </Link>
-            <Link href="/project" className="mx-4 hover:text-gray-900">
-              Project
+            <Link href="/activity" className="mx-4 hover:text-gray-900">
+              Activity
             </Link>
             <Link href="/member" className="mx-4 hover:text-gray-900">
               Member

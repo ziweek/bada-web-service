@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Content from "../components/project/content";
+import Content from "../components/activity/content";
 import Layout from "../components/layout";
 
 export default function Home() {
