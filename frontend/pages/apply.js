@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Detail from "../components/home/detail";
 import Layout from "../components/layout";
+import Step from "../components/home/step";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <Detail></Detail>
+        <Step className="flex" />
+        <Detail className="flex" />
       </Layout>
     </div>
   );
