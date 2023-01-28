@@ -1,26 +1,66 @@
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import { useEffect } from "react";
 
 export default function Content() {
+  useEffect(() => {
+    AOS.init({
+      // duration: 1000,
+      // mirror: false,
+      // once: true,
+    });
+  });
   // banner, name, summary, link_github
-  const res = [1];
-  // const res = [1, 2, 3, 4, 5];
+  // const res = [1];
+  const res = [1, 2, 3, 4, 5];
   return (
     <>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-5xl mb-2 sm:mb-0">
+              {/* <div
+                data-aos="flip-right"
+                data-aos-duration="500"
+                data-aos-anchor-placement="top-center"
+              > */}
+              <h1
+                data-aos="flip-right"
+                data-aos-duration="500"
+                data-aos-anchor-placement="top-center"
+                className="sm:w-2/5 text-gray-900 font-medium title-font text-5xl mb-2 sm:mb-0"
+              >
                 CLUB ACTIVITY
               </h1>
-              <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+              {/* </div> */}
+              {/* <div
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="500"
+              > */}
+              <p
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="500"
+                className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"
+              >
                 Street art subway tile salvia four dollar toast bitters selfies
                 quinoa yuccie synth meditation iPhone intelligentsia prism tofu.
                 Viral gochujang bitters dreamcatcher.
               </p>
+              {/* </div> */}
             </div>
           </div>
-          <div className="mb-32">
+          <div
+            data-aos="flip-up"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="1000"
+            className="mb-32"
+          >
             {/* <div className="flex w-24 pb-2 items-center justify-between"> */}
             <div className="flex w-full items-center justify-between pb-2">
               <p className="text-gray-300 font-bold">Founder</p>
@@ -51,7 +91,13 @@ export default function Content() {
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             {res.map((e, i) => (
-              <div key={i} className="p-4 md:w-1/3 sm:mb-0 mb-6 pb-8">
+              <div
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-center"
+                key={i}
+                className="p-4 md:w-1/3 sm:mb-0 mb-6 pb-8"
+              >
                 <div className="rounded-lg h-64 overflow-hidden">
                   <Image
                     width={1200}

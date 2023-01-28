@@ -2,25 +2,48 @@ import Image from "next/image";
 
 export default function MemberMain() {
   // profileImage, name, position, memo, experience1, experience2, experience3, link_linkedIn, link_github, link_instagram
-  const res = [1];
-  // const res = [1, 2, 3, 4, 5, 6, 7, 8];
+  // const res = [1];
+  const res = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
     <>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-5xl mb-2 sm:mb-0">
-                CLUB MEMBERS
+              {/* <div
+                data-aos="flip-right"
+                data-aos-duration="500"
+                data-aos-anchor-placement="top-center"
+              > */}
+              <h1
+                data-aos="flip-right"
+                data-aos-duration="500"
+                data-aos-anchor-placement="top-center"
+                className="sm:w-2/5 text-gray-900 font-medium title-font text-5xl mb-2 sm:mb-0"
+              >
+                CLUB MEMBER
               </h1>
-              <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+              {/* </div> */}
+              <p
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="500"
+                className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"
+              >
                 Street art subway tile salvia four dollar toast bitters selfies
                 quinoa yuccie synth meditation iPhone intelligentsia prism tofu.
                 Viral gochujang bitters dreamcatcher.
               </p>
             </div>
           </div>
-          <div className="mb-32">
+          <div
+            data-aos="flip-up"
+            data-aos-duration="500"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="1000"
+            className="mb-32"
+          >
             {/* <div className="flex w-24 pb-2 items-center justify-between"> */}
             <div className="flex w-full items-center justify-between pb-2">
               <p className="text-gray-300 font-bold">Founder</p>
@@ -52,7 +75,13 @@ export default function MemberMain() {
           <div className="flex flex-wrap -m-4">
             {/*  */}
             {res.map((e, i) => (
-              <div key={i} className="p-4 lg:w-1/4 md:w-1/2 pb-8">
+              <div
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-center"
+                key={i}
+                className="p-4 lg:w-1/4 md:w-1/2 pb-8"
+              >
                 <div className="h-full flex flex-col items-center text-center">
                   <Image
                     priority={true}

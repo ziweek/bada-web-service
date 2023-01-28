@@ -1,8 +1,18 @@
 import Image from "next/image";
 import logoTextPic from "../public/logo_horizontal_blue.png";
 import Link from "next/link";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
 
 export default function Header() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  });
+
   return (
     <>
       <header className="bg-primary text-gray-600 body-font">
@@ -29,8 +39,8 @@ export default function Header() {
                 height="24px"
                 viewBox="0 0 24 24"
                 width="24px"
-                fill="currentColor"
-                className="h-8 w-8"
+                fill="#3B82F6"
+                className="h-8 w-12"
               >
                 <g>
                   <rect fill="none" height="24" width="24" />
@@ -41,19 +51,41 @@ export default function Header() {
               </svg>
             </Link>
           </div>
-          <nav className="md:ml-auto inline-flex flex-row items-center text-base justify-between w-full px-4">
-            <Link href="/" className="hover:text-gray-900">
-              Home
-            </Link>
-            <Link href="/activity" className="hover:text-gray-900">
-              Activity
-            </Link>
-            <Link href="/member" className="hover:text-gray-900">
-              Member
-            </Link>
-            <Link href="/recruit" className="hover:text-gray-900">
-              Recruit
-            </Link>
+          <nav className="md:ml-auto inline-flex flex-row items-start text-base justify-between lg:justify-end w-full">
+            <div className="inline-flex flex-col items-center mx-4">
+              <Link href="/" className="hover:text-gray-900">
+                Home
+              </Link>
+              {/* <div className="h-1 w-12 bg-blue-300 mt-1"> */}
+              {/* <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#3B82F6"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+              </svg> */}
+            </div>
+            <div className="inline-flex flex-col items-center mx-4">
+              <Link href="/activity" className="hover:text-gray-900">
+                Activity
+              </Link>
+              {/* <div className="h-1 w-12 bg-blue-300 mt-1"></div> */}
+            </div>
+            <div className="inline-flex flex-col items-center mx-4">
+              <Link href="/member" className="hover:text-gray-900">
+                Member
+              </Link>
+              {/* <div className="h-1 w-12 bg-blue-300 mt-1"></div> */}
+            </div>
+            <div className="inline-flex flex-col items-center mx-4">
+              <Link href="/recruit" className="hover:text-gray-900">
+                Recruit
+              </Link>
+              {/* <div className="h-1 w-12 bg-blue-300 mt-1"></div> */}
+            </div>
           </nav>
           {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             Log In
