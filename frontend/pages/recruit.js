@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Submit from "../components/recruit/submit";
 import Layout from "../components/layout";
 import Step from "../components/recruit/step";
 
@@ -14,7 +13,6 @@ export default function Home() {
 
       <Layout>
         <Step className="flex" />
-        <Submit className="flex" />
       </Layout>
     </div>
   );

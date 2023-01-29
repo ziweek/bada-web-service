@@ -5,8 +5,8 @@ import { useEffect } from "react";
 export default function Content() {
   useEffect(() => {
     AOS.init({
-      duration: 750,
-      // mirror: false,
+      duration: 1000,
+      // mirror: true,
       // once: true,
     });
   });
@@ -19,7 +19,7 @@ export default function Content() {
               <div className="h-full text-center">
                 <div>
                   <svg
-                    xmlns="http://www.w3.org/750/svg"
+                    xmlns="http://www.w3.org/500/svg"
                     fill="currentColor"
                     class="inline-block w-8 h-8 text-gray-400 mb-8"
                     viewBox="0 0 975.036 975.036"
@@ -29,7 +29,7 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  data-aos-delay="750"
+                  data-aos-delay="500"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <p className="leading-relaxed">
@@ -47,8 +47,8 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  // data-aos-duration="750"
-                  data-aos-delay="1000"
+                  // data-aos-duration="500"
+                  data-aos-delay="750"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <h2 className="text-gray-900 font-medium title-font tracking-wider text-md">
@@ -57,8 +57,8 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  // data-aos-duration="750"
-                  data-aos-delay="1250"
+                  // data-aos-duration="500"
+                  data-aos-delay="1000"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <p className="text-gray-500 text-sm">
@@ -71,7 +71,7 @@ export default function Content() {
               <div className="h-full text-center">
                 <div>
                   <svg
-                    xmlns="http://www.w3.org/750/svg"
+                    xmlns="http://www.w3.org/500/svg"
                     fill="currentColor"
                     class="inline-block w-8 h-8 text-gray-400 mb-8"
                     viewBox="0 0 975.036 975.036"
@@ -81,7 +81,7 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  data-aos-delay="750"
+                  data-aos-delay="500"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <p className="leading-relaxed">
@@ -99,8 +99,8 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  // data-aos-duration="750"
-                  data-aos-delay="1000"
+                  // data-aos-duration="500"
+                  data-aos-delay="750"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <h2 className="text-gray-900 font-medium title-font tracking-wider text-md">
@@ -109,8 +109,8 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  // data-aos-duration="750"
-                  data-aos-delay="1250"
+                  // data-aos-duration="500"
+                  data-aos-delay="1000"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <p className="text-gray-500 text-sm">
@@ -123,7 +123,7 @@ export default function Content() {
               <div className="h-full text-center">
                 <div>
                   <svg
-                    xmlns="http://www.w3.org/750/svg"
+                    xmlns="http://www.w3.org/500/svg"
                     fill="currentColor"
                     class="inline-block w-8 h-8 text-gray-400 mb-8"
                     viewBox="0 0 975.036 975.036"
@@ -133,7 +133,7 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  data-aos-delay="750"
+                  data-aos-delay="500"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <p className="leading-relaxed">
@@ -151,8 +151,8 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  // data-aos-duration="750"
-                  data-aos-delay="1000"
+                  // data-aos-duration="500"
+                  data-aos-delay="750"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <h2 className="text-gray-900 font-medium title-font tracking-wider text-md">
@@ -161,8 +161,8 @@ export default function Content() {
                 </div>
                 <div
                   data-aos="fade-in"
-                  // data-aos-duration="750"
-                  data-aos-delay="1250"
+                  // data-aos-duration="500"
+                  data-aos-delay="1000"
                   data-aos-anchor-placement="top-bottom"
                 >
                   <p className="text-gray-500 text-sm">

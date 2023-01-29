@@ -9,7 +9,7 @@ export default function Hero() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      // mirror: false,
+      // mirror: true,
       // once: true,
     });
   });
@@ -65,9 +65,8 @@ export default function Hero() {
               >
                 <p className="mb-8 leading-relaxed">
                   고려대학교 경영학회 bada는 Business Analytics를 연구하는
-                  학회입니다.
-                  <br className="hidden md:block" />본 학회에서는 경영학,
-                  통계학, 데이터과학에 관련된 핵심적인 지식을 공유하고,
+                  학회입니다. <br className="hidden md:block" />본 학회에서는
+                  경영학, 통계학, 데이터과학에 관련된 핵심적인 지식을 공유하고,{" "}
                   <br className="hidden md:block" /> 이를 기반으로 하여 다양한
                   프로젝트를 수행하고 있습니다.
                 </p>
@@ -85,7 +84,7 @@ export default function Hero() {
                 className="flex justify-center"
               >
                 <Link
-                  href="/apply"
+                  href="/"
                   className="text-gray-400 inline-flex  border-0 py-2 px-6 focus:outline-none dark:hover:text-white hover:text-black rounded text-lg items-center justify-center"
                 >
                   학회 지원하기

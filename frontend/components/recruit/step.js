@@ -1,7 +1,18 @@
 import Image from "next/image";
 import logoPic from "../../public/logo_192.png";
+import { Dropdown } from "@nextui-org/react";
+import React from "react";
 
 export default function Step() {
+  const resGeneration = ["3rd", "2nd", "1st"];
+  const resRecruit = [1, 2, 3, 4, 5, 6, 7, 8];
+  const [selected, setSelected] = React.useState(new Set([resGeneration[0]]));
+
+  const selectedValue = React.useMemo(
+    () => Array.from(selected).join(", ").replaceAll("_", " "),
+    [selected]
+  );
+
   // poster_image, checklist_image
   return (
     <>
@@ -16,12 +27,13 @@ export default function Step() {
                   data-aos-anchor-placement="top-center"
                   className="sm:w-2/5 text-gray-900 font-medium title-font text-5xl mb-2 sm:mb-0"
                 >
-                  CLUB RECUITING
+                  CLUB <br className="block md:hidden" />
+                  RECUITING
                 </h1>
                 <p
                   data-aos="fade-in"
                   data-aos-duration="1000"
-                  data-aos-anchor-placement="top-center"
+                  data-aos-anchor-placement="bottom-bottom"
                   data-aos-delay="500"
                   className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"
                 >
@@ -40,27 +52,25 @@ export default function Step() {
             >
               {/* <div className="flex w-24 pb-2 items-center justify-between"> */}
               <div className="flex w-full items-center justify-between pb-2">
-                <p className="text-gray-300 font-bold">Founder</p>
-                <div className="flex flex-row w-24 items-center justify-between">
-                  <div></div>
-                  <div></div>
-                  <p className="text-blue-400 font-bold">11st</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    width="24px"
-                    className="h-5 w-5"
-                    fill="currentColor"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="0"
+                <p className="text-gray-300 font-bold">Foundation</p>
+
+                <Dropdown>
+                  <Dropdown.Button flat>
+                    <p className="text-blue-400 font-bold">{selectedValue}</p>
+                  </Dropdown.Button>
+                  <Dropdown.Menu
+                    aria-label="Single selection actions"
+                    color="default"
+                    disallowEmptySelection
+                    selectionMode="single"
+                    selectedKeys={selected}
+                    onSelectionChange={setSelected}
                   >
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M7 10l5 5 5-5z" />
-                  </svg>
-                </div>
+                    {resGeneration.map((e, i) => (
+                      <Dropdown.Item key={e}>{e}</Dropdown.Item>
+                    ))}
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
               <div className="flex justify-end h-2 bg-gray-200 rounded overflow-hidden">
                 <div className="w-24 h-full bg-blue-400"></div>

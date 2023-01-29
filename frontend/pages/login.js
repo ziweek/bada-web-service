@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Content from "../components/home/content";
-import Hero from "../components/home/hero";
+import Main from "../components/login/main";
 import Layout from "../components/layout";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <Hero className="flex" />
+        <Main className="flex" />
       </Layout>
     </div>
   );
