@@ -28,7 +28,7 @@ export default function Step() {
                   className="sm:w-2/5 text-gray-900 font-medium title-font text-5xl mb-2 sm:mb-0"
                 >
                   CLUB <br className="block md:hidden" />
-                  RECUITING
+                  RECUIT
                 </h1>
                 <p
                   data-aos="fade-in"

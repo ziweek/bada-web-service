@@ -14,6 +14,7 @@ import { EventsModule } from './modules/models/events/events.module';
 import { Profile } from './modules/models/profiles/entities/profile.entity';
 import { Project } from './modules/models/projects/entities/project.entity';
 import { Event } from './modules/models/events/entities/event.entity';
+import { ActivitiesModule } from './modules/models/activities/activities.module';
 
 const DEFAULT_ADMIN = {
   email: process.env.DEFAULT_ADMIN_EMAIL,
@@ -90,6 +91,7 @@ adminjs.registerAdapter({
     AuthModule,
     UploaderModule,
     EventsModule,
+    ActivitiesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

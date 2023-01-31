@@ -75,6 +75,6 @@ async function bootstrap() {
   SwaggerModule.setup('docs', app, document);
 
   // PORT SETTING
-  await app.listen(3000);
+  await app.listen(5000);
 }
 bootstrap();
