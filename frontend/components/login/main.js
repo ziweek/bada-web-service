@@ -1,5 +1,6 @@
 import { signIn, useSession, signOut } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import logoImg from "../../public/logo_rectangle_vertical_blue_transparent.png";
 
@@ -17,7 +18,7 @@ export default function LoginMain() {
     <>
       <section>
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0">
-          <a
+          <Link
             href="/"
             className="flex items-center justify-center text-2xl font-semibold text-gray-900"
           >
@@ -27,7 +28,7 @@ export default function LoginMain() {
               alt="logo"
               priority
             />
-          </a>
+          </Link>
           <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
