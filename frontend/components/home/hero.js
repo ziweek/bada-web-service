@@ -49,7 +49,8 @@ export default function Hero() {
                 // data-aos-once="true"
               >
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-                  Beyond Analytics, Develop Answer
+                  Beyond Analytics, <br className="inline-block lg:hidden" />
+                  Develop Answer
                 </h1>
               </div>
               <div
