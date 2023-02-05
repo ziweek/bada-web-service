@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { NextUIProvider } from "@nextui-org/react";
+import { createTheme, NextUIProvider } from "@nextui-org/react";
 import { SessionProvider } from "next-auth/react";
 
 // function MyApp({ Component, pageProps }) {
@@ -9,6 +9,18 @@ import { SessionProvider } from "next-auth/react";
 // export default MyApp
 
 // 1. import `NextUIProvider` component
+
+// 2. Call `createTheme` and pass your custom theme values
+const theme = createTheme({
+  type: "dark", // it could be "light" or "dark"
+  theme: {
+    colors: {
+      primary: "#4ADE7B",
+      secondary: "#F9CB80",
+      error: "#FCC5D8",
+    },
+  },
+});
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (

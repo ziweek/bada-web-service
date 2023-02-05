@@ -2,9 +2,9 @@ import Head from "next/head";
 import Content from "../components/home/content";
 import Hero from "../components/home/hero";
 import Layout from "../components/layout";
-import LoginMain from "../components/login/main";
+import ProfileMain from "../components/profile/main";
 
-export default function Login() {
+export default function Register() {
   return (
     <div>
       <Head>
@@ -17,13 +17,13 @@ export default function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <div className="flex flex-col items-center justify-between relative h-[100vh]">
-        <div className="max-w-6xl mx-3 lg:mx-auto z-0">
-        </div>
-      </div> */}
+      {/* <div className="flex flex-col items-center justify-between h-[100vh] min-w-full px-4">
+        <div className="w-full z-0"> */}
       <Layout>
-        <LoginMain className="flex"></LoginMain>
+        <ProfileMain className="flex" />
       </Layout>
+      {/* </div>
+      </div> */}
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import { Dropdown, grayDark } from "@nextui-org/react";
 import { useRouter } from "next/router";
 
-export default function RegisterMain() {
+export default function ProfileMain() {
   const { data: session, status } = useSession();
   const resAuthority = ["Leader", "Staff", "Member"];
   const [selected, setSelected] = useState(new Set([resAuthority[0]]));
@@ -16,7 +16,7 @@ export default function RegisterMain() {
 
   useEffect(() => {
     if (status === "authenticated") {
-      // router.push("/");
+      //   router.push("/");
     } else {
       return;
     }
@@ -282,6 +282,7 @@ export default function RegisterMain() {
                   type="checkbox"
                   defaultValue=""
                   className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                  checked
                 />
                 <label
                   htmlFor="checkbox-1"
@@ -308,8 +309,7 @@ export default function RegisterMain() {
                   htmlFor="checkbox-2"
                   className="ml-2 text-sm font-medium text-gray-900"
                 >
-                  (필수) 본 계정은 관리자의 승인 이후에 정상적으로 사용이
-                  가능합니다.
+                  (필수) 수정사항은 관리자의 승인 이후에 반영됩니다.
                 </label>
               </div>
 
@@ -339,7 +339,7 @@ export default function RegisterMain() {
             type="submit"
             className="mb-12 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
-            프로필 생성하기
+            프로필 수정하기
           </button>
         </form>
       </section>

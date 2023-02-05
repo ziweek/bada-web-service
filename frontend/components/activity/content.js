@@ -75,7 +75,7 @@ export default function Content() {
             {/* <div className="flex w-24 pb-2 items-center justify-between"> */}
             <div className="flex w-full items-center justify-between pb-2">
               <p className="text-gray-300 font-bold">Foundation</p>
-              <Dropdown>
+              <Dropdown placement="bottom-right">
                 <Dropdown.Button flat>
                   <p className="text-blue-400 font-bold">{selectedValue}</p>
                 </Dropdown.Button>

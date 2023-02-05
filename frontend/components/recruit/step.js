@@ -54,7 +54,7 @@ export default function Step() {
               <div className="flex w-full items-center justify-between pb-2">
                 <p className="text-gray-300 font-bold">Foundation</p>
 
-                <Dropdown>
+                <Dropdown placement="bottom-right">
                   <Dropdown.Button flat>
                     <p className="text-blue-400 font-bold">{selectedValue}</p>
                   </Dropdown.Button>
@@ -83,6 +83,7 @@ export default function Step() {
                 alt="step"
                 width={1200}
                 height={500}
+                priority
               />
               <div className="md:w-1/2 md:py-6 items-center justify-center">
                 <div className="flex relative pb-12">
@@ -93,9 +94,9 @@ export default function Step() {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -120,9 +121,9 @@ export default function Step() {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -147,9 +148,9 @@ export default function Step() {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -175,9 +176,9 @@ export default function Step() {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -200,9 +201,9 @@ export default function Step() {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
